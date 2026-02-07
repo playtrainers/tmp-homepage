@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playtrainers</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eeecec;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 450px;
+            margin: 0 20px;
+        }
+
+        .btn {
+            display: flex;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px 20px;
+            margin: 15px auto;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 40px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 60, 0, 0.7);
+        }
+
+        .btn-corsi {
+            background: linear-gradient(135deg, #ff2a00, #ff6a00);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #1ebe5d);
+        }
+
+        .btn div > img {
+            height: 40px;
+            border-radius: 100%;
+        }
+
+        .btn > div > span{
+            flex: 1;
+        }
+
+        .btn div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="https://iosonoinforma.com/prima-di-iniziare/" class="btn btn-corsi">
+            <div>
+                <img src="logo.jfif" alt="Logo IO Sono in Forma">
+                <span>Accedi ai corsi</span>
+            </div>
+        </a>
+
+        <a href="https://wa.me/393347402472" class="btn btn-whatsapp" target="_blank">
+            <div>
+                <img src="whatsapp.png" alt="Logo WhatsApp" style="background:#fff;">
+                <span>Contatta Anthony su WhatsApp</span>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
